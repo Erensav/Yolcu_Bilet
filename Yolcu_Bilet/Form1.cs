@@ -33,14 +33,14 @@ namespace Yolcu_Bilet
         private void btnkaydet_Click(object sender, EventArgs e)
         {
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("insert into Yolcu_bilgiler (yolcu_ad,yolcu_soyad,yolcu_tel,yolcu_tc,yolcu_cins,yolcu_mail) values (@p1,@p2,@p3,@p4,@p5,@p6)", baglanti);
-            komut.Parameters.AddWithValue("@p1",txtad.Text);
-            komut.Parameters.AddWithValue("@p2",txtsoyad.Text);
-            komut.Parameters.AddWithValue("@p3",msktel.Text);
-            komut.Parameters.AddWithValue("@p4",msktc.Text);
-            komut.Parameters.AddWithValue("@p5", combocins.Text);
-            komut.Parameters.AddWithValue("@p6", txtmail.Text);
-            komut.ExecuteNonQuery();
+            SqlCommand bilgiyolcu = new SqlCommand("insert into Yolcu_bilgiler (yolcu_ad,yolcu_soyad,yolcu_tel,yolcu_tc,yolcu_cins,yolcu_mail) values (@p1,@p2,@p3,@p4,@p5,@p6)", baglanti);
+            bilgiyolcu.Parameters.AddWithValue("@p1",txtad.Text);
+            bilgiyolcu.Parameters.AddWithValue("@p2",txtsoyad.Text);
+            bilgiyolcu.Parameters.AddWithValue("@p3",msktel.Text);
+            bilgiyolcu.Parameters.AddWithValue("@p4",msktc.Text);
+            bilgiyolcu.Parameters.AddWithValue("@p5", combocins.Text);
+            bilgiyolcu.Parameters.AddWithValue("@p6", txtmail.Text);
+            bilgiyolcu.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Yolcu Bilgisi Sisteme Kaydedildi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
