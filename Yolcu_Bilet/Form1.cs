@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
+
 
 namespace Yolcu_Bilet
 {
@@ -24,6 +27,23 @@ namespace Yolcu_Bilet
 
         private void label16_Click(object sender, EventArgs e)
         {
+
+        }
+        SqlConnection baglanti = new SqlConnection(@"Data Source = EREN\SQLEXPRESS; Initial Catalog = Yolcu_bilet; Integrated Security = True");
+        private void btnkaydet_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Yolcu_bilgiler (yolcu_ad,yolcu_soyad,yolcu_tel,yolcu_tc,yolcu_cins,yolcu_mail) values (@p1,@p2,@p3,@p4,@p5,@p6)", baglanti);
+            komut.Parameters.AddWithValue("@p1",txtad.Text);
+            komut.Parameters.AddWithValue("@p2",txtsoyad.Text);
+            komut.Parameters.AddWithValue("@p3",msktel.Text);
+            komut.Parameters.AddWithValue("@p4",msktc.Text);
+            komut.Parameters.AddWithValue("@p5", combocins.Text);
+            komut.Parameters.AddWithValue("@p6", txtmail.Text);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Yolcu Bilgisi Sisteme Kaydedildi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
 
         }
     }

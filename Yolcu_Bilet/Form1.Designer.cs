@@ -45,6 +45,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnkaydet = new System.Windows.Forms.Button();
+            this.msktc = new System.Windows.Forms.MaskedTextBox();
+            this.msktel = new System.Windows.Forms.MaskedTextBox();
             this.combocins = new System.Windows.Forms.ComboBox();
             this.txtmail = new System.Windows.Forms.TextBox();
             this.txtsoyad = new System.Windows.Forms.TextBox();
@@ -56,46 +59,45 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.msktel = new System.Windows.Forms.MaskedTextBox();
-            this.msktc = new System.Windows.Forms.MaskedTextBox();
-            this.btnkaydet = new System.Windows.Forms.Button();
+            this.btnsefer = new System.Windows.Forms.Button();
+            this.txtfyt = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.mskkaptan = new System.Windows.Forms.MaskedTextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.msksaat = new System.Windows.Forms.MaskedTextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtvrs = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.msktarih = new System.Windows.Forms.MaskedTextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.txtkls = new System.Windows.Forms.TextBox();
             this.txtsfrno = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.msktarih = new System.Windows.Forms.MaskedTextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtvrs = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.msksaat = new System.Windows.Forms.MaskedTextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.mskkaptan = new System.Windows.Forms.MaskedTextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtfyt = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.btnsefer = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnkaptan = new System.Windows.Forms.Button();
+            this.mskkptntel = new System.Windows.Forms.MaskedTextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.txtkptnad = new System.Windows.Forms.TextBox();
             this.txtkptnno = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.mskkptntel = new System.Windows.Forms.MaskedTextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.btnkaptan = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.mskrezervetc = new System.Windows.Forms.MaskedTextBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.btnrezervasyon = new System.Windows.Forms.Button();
             this.txtseferno = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.mskrezervetc = new System.Windows.Forms.MaskedTextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.button16 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -293,6 +295,33 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
+            // btnkaydet
+            // 
+            this.btnkaydet.Location = new System.Drawing.Point(156, 416);
+            this.btnkaydet.Name = "btnkaydet";
+            this.btnkaydet.Size = new System.Drawing.Size(209, 48);
+            this.btnkaydet.TabIndex = 14;
+            this.btnkaydet.Text = "Kaydet";
+            this.btnkaydet.UseVisualStyleBackColor = true;
+            this.btnkaydet.Click += new System.EventHandler(this.btnkaydet_Click);
+            // 
+            // msktc
+            // 
+            this.msktc.Location = new System.Drawing.Point(156, 170);
+            this.msktc.Mask = "00000000000";
+            this.msktc.Name = "msktc";
+            this.msktc.Size = new System.Drawing.Size(209, 31);
+            this.msktc.TabIndex = 13;
+            this.msktc.ValidatingType = typeof(int);
+            // 
+            // msktel
+            // 
+            this.msktel.Location = new System.Drawing.Point(156, 305);
+            this.msktel.Mask = "(999) 000-0000";
+            this.msktel.Name = "msktel";
+            this.msktel.Size = new System.Drawing.Size(209, 31);
+            this.msktel.TabIndex = 12;
+            // 
             // combocins
             // 
             this.combocins.FormattingEnabled = true;
@@ -402,31 +431,100 @@
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             // 
-            // msktel
+            // btnsefer
             // 
-            this.msktel.Location = new System.Drawing.Point(156, 305);
-            this.msktel.Mask = "(999) 000-0000";
-            this.msktel.Name = "msktel";
-            this.msktel.Size = new System.Drawing.Size(209, 31);
-            this.msktel.TabIndex = 12;
+            this.btnsefer.Location = new System.Drawing.Point(160, 354);
+            this.btnsefer.Name = "btnsefer";
+            this.btnsefer.Size = new System.Drawing.Size(209, 48);
+            this.btnsefer.TabIndex = 24;
+            this.btnsefer.Text = "Sefer Olustur";
+            this.btnsefer.UseVisualStyleBackColor = true;
             // 
-            // msktc
+            // txtfyt
             // 
-            this.msktc.Location = new System.Drawing.Point(156, 170);
-            this.msktc.Mask = "00000000000";
-            this.msktc.Name = "msktc";
-            this.msktc.Size = new System.Drawing.Size(209, 31);
-            this.msktc.TabIndex = 13;
-            this.msktc.ValidatingType = typeof(int);
+            this.txtfyt.Location = new System.Drawing.Point(160, 307);
+            this.txtfyt.Name = "txtfyt";
+            this.txtfyt.Size = new System.Drawing.Size(209, 31);
+            this.txtfyt.TabIndex = 23;
             // 
-            // btnkaydet
+            // label13
             // 
-            this.btnkaydet.Location = new System.Drawing.Point(156, 416);
-            this.btnkaydet.Name = "btnkaydet";
-            this.btnkaydet.Size = new System.Drawing.Size(209, 48);
-            this.btnkaydet.TabIndex = 14;
-            this.btnkaydet.Text = "Kaydet";
-            this.btnkaydet.UseVisualStyleBackColor = true;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(97, 310);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(56, 24);
+            this.label13.TabIndex = 22;
+            this.label13.Text = "Fiyat:";
+            // 
+            // mskkaptan
+            // 
+            this.mskkaptan.Location = new System.Drawing.Point(160, 263);
+            this.mskkaptan.Mask = "0000";
+            this.mskkaptan.Name = "mskkaptan";
+            this.mskkaptan.Size = new System.Drawing.Size(209, 31);
+            this.mskkaptan.TabIndex = 21;
+            this.mskkaptan.ValidatingType = typeof(int);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(80, 266);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(75, 24);
+            this.label12.TabIndex = 20;
+            this.label12.Text = "Kaptan:";
+            // 
+            // msksaat
+            // 
+            this.msksaat.Location = new System.Drawing.Point(160, 226);
+            this.msksaat.Mask = "00:00";
+            this.msksaat.Name = "msksaat";
+            this.msksaat.Size = new System.Drawing.Size(209, 31);
+            this.msksaat.TabIndex = 19;
+            this.msksaat.ValidatingType = typeof(System.DateTime);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(102, 233);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(51, 24);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "Saat:";
+            // 
+            // txtvrs
+            // 
+            this.txtvrs.Location = new System.Drawing.Point(160, 143);
+            this.txtvrs.Name = "txtvrs";
+            this.txtvrs.Size = new System.Drawing.Size(209, 31);
+            this.txtvrs.TabIndex = 17;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(97, 150);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(56, 24);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "Varis:";
+            // 
+            // msktarih
+            // 
+            this.msktarih.Location = new System.Drawing.Point(160, 189);
+            this.msktarih.Mask = "00/00/0000";
+            this.msktarih.Name = "msktarih";
+            this.msktarih.Size = new System.Drawing.Size(209, 31);
+            this.msktarih.TabIndex = 15;
+            this.msktarih.ValidatingType = typeof(System.DateTime);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(96, 192);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(57, 24);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Tarih:";
             // 
             // txtkls
             // 
@@ -460,101 +558,6 @@
             this.label8.TabIndex = 8;
             this.label8.Text = "Sefer Numarasi:";
             // 
-            // msktarih
-            // 
-            this.msktarih.Location = new System.Drawing.Point(160, 189);
-            this.msktarih.Mask = "00/00/0000";
-            this.msktarih.Name = "msktarih";
-            this.msktarih.Size = new System.Drawing.Size(209, 31);
-            this.msktarih.TabIndex = 15;
-            this.msktarih.ValidatingType = typeof(System.DateTime);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(96, 192);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 24);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Tarih:";
-            // 
-            // txtvrs
-            // 
-            this.txtvrs.Location = new System.Drawing.Point(160, 143);
-            this.txtvrs.Name = "txtvrs";
-            this.txtvrs.Size = new System.Drawing.Size(209, 31);
-            this.txtvrs.TabIndex = 17;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(97, 150);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(56, 24);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "Varis:";
-            // 
-            // msksaat
-            // 
-            this.msksaat.Location = new System.Drawing.Point(160, 226);
-            this.msksaat.Mask = "00:00";
-            this.msksaat.Name = "msksaat";
-            this.msksaat.Size = new System.Drawing.Size(209, 31);
-            this.msksaat.TabIndex = 19;
-            this.msksaat.ValidatingType = typeof(System.DateTime);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(102, 233);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(51, 24);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Saat:";
-            // 
-            // mskkaptan
-            // 
-            this.mskkaptan.Location = new System.Drawing.Point(160, 263);
-            this.mskkaptan.Mask = "0000";
-            this.mskkaptan.Name = "mskkaptan";
-            this.mskkaptan.Size = new System.Drawing.Size(209, 31);
-            this.mskkaptan.TabIndex = 21;
-            this.mskkaptan.ValidatingType = typeof(int);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(80, 266);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(75, 24);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "Kaptan:";
-            // 
-            // txtfyt
-            // 
-            this.txtfyt.Location = new System.Drawing.Point(160, 307);
-            this.txtfyt.Name = "txtfyt";
-            this.txtfyt.Size = new System.Drawing.Size(209, 31);
-            this.txtfyt.TabIndex = 23;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(97, 310);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(56, 24);
-            this.label13.TabIndex = 22;
-            this.label13.Text = "Fiyat:";
-            // 
-            // btnsefer
-            // 
-            this.btnsefer.Location = new System.Drawing.Point(160, 354);
-            this.btnsefer.Name = "btnsefer";
-            this.btnsefer.Size = new System.Drawing.Size(209, 48);
-            this.btnsefer.TabIndex = 24;
-            this.btnsefer.Text = "Sefer Olustur";
-            this.btnsefer.UseVisualStyleBackColor = true;
-            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.btnkaptan);
@@ -569,6 +572,33 @@
             this.groupBox4.Size = new System.Drawing.Size(359, 225);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
+            // 
+            // btnkaptan
+            // 
+            this.btnkaptan.Location = new System.Drawing.Point(144, 171);
+            this.btnkaptan.Name = "btnkaptan";
+            this.btnkaptan.Size = new System.Drawing.Size(209, 48);
+            this.btnkaptan.TabIndex = 15;
+            this.btnkaptan.Text = "Kaptan";
+            this.btnkaptan.UseVisualStyleBackColor = true;
+            // 
+            // mskkptntel
+            // 
+            this.mskkptntel.Location = new System.Drawing.Point(144, 116);
+            this.mskkptntel.Mask = "(999) 000-0000";
+            this.mskkptntel.Name = "mskkptntel";
+            this.mskkptntel.Size = new System.Drawing.Size(209, 31);
+            this.mskkptntel.TabIndex = 16;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(52, 119);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(77, 24);
+            this.label16.TabIndex = 15;
+            this.label16.Text = "Telefon:";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // txtkptnad
             // 
@@ -602,33 +632,6 @@
             this.label15.TabIndex = 8;
             this.label15.Text = "Kaptan No:";
             // 
-            // mskkptntel
-            // 
-            this.mskkptntel.Location = new System.Drawing.Point(144, 116);
-            this.mskkptntel.Mask = "(999) 000-0000";
-            this.mskkptntel.Name = "mskkptntel";
-            this.mskkptntel.Size = new System.Drawing.Size(209, 31);
-            this.mskkptntel.TabIndex = 16;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(52, 119);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(77, 24);
-            this.label16.TabIndex = 15;
-            this.label16.Text = "Telefon:";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
-            // 
-            // btnkaptan
-            // 
-            this.btnkaptan.Location = new System.Drawing.Point(144, 171);
-            this.btnkaptan.Name = "btnkaptan";
-            this.btnkaptan.Size = new System.Drawing.Size(209, 48);
-            this.btnkaptan.TabIndex = 15;
-            this.btnkaptan.Text = "Kaptan";
-            this.btnkaptan.UseVisualStyleBackColor = true;
-            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.textBox1);
@@ -643,6 +646,40 @@
             this.groupBox5.Size = new System.Drawing.Size(387, 242);
             this.groupBox5.TabIndex = 17;
             this.groupBox5.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(144, 116);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(209, 31);
+            this.textBox1.TabIndex = 18;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(11, 123);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(100, 24);
+            this.label20.TabIndex = 17;
+            this.label20.Text = "Koltuk No:";
+            // 
+            // mskrezervetc
+            // 
+            this.mskrezervetc.Location = new System.Drawing.Point(144, 64);
+            this.mskrezervetc.Mask = "00000000000";
+            this.mskrezervetc.Name = "mskrezervetc";
+            this.mskrezervetc.Size = new System.Drawing.Size(209, 31);
+            this.mskrezervetc.TabIndex = 16;
+            this.mskrezervetc.ValidatingType = typeof(int);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(75, 71);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(36, 24);
+            this.label18.TabIndex = 15;
+            this.label18.Text = "TC:";
             // 
             // btnrezervasyon
             // 
@@ -669,47 +706,23 @@
             this.label19.TabIndex = 8;
             this.label19.Text = "Sefer No:";
             // 
-            // mskrezervetc
-            // 
-            this.mskrezervetc.Location = new System.Drawing.Point(144, 64);
-            this.mskrezervetc.Mask = "00000000000";
-            this.mskrezervetc.Name = "mskrezervetc";
-            this.mskrezervetc.Size = new System.Drawing.Size(209, 31);
-            this.mskrezervetc.TabIndex = 16;
-            this.mskrezervetc.ValidatingType = typeof(int);
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(75, 71);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(36, 24);
-            this.label18.TabIndex = 15;
-            this.label18.Text = "TC:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(144, 116);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(209, 31);
-            this.textBox1.TabIndex = 18;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(11, 123);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(100, 24);
-            this.label20.TabIndex = 17;
-            this.label20.Text = "Koltuk No:";
-            // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.button16);
             this.groupBox6.Location = new System.Drawing.Point(813, 497);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(375, 231);
             this.groupBox6.TabIndex = 18;
             this.groupBox6.TabStop = false;
+            // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(94, 177);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(209, 48);
+            this.button16.TabIndex = 15;
+            this.button16.Text = "Kaydet";
+            this.button16.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -736,6 +749,7 @@
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -805,6 +819,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Button button16;
     }
 }
 
