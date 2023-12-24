@@ -83,7 +83,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtkoltukno = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.mskrezervetc = new System.Windows.Forms.MaskedTextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -92,12 +92,16 @@
             this.label19 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.button16 = new System.Windows.Forms.Button();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -119,7 +123,7 @@
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Location = new System.Drawing.Point(43, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(359, 479);
+            this.groupBox1.Size = new System.Drawing.Size(310, 479);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Koltuk Secimi";
@@ -127,22 +131,24 @@
             // button11
             // 
             this.button11.BackColor = System.Drawing.Color.Silver;
-            this.button11.Location = new System.Drawing.Point(171, 298);
+            this.button11.Location = new System.Drawing.Point(131, 299);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(73, 59);
             this.button11.TabIndex = 14;
             this.button11.Text = "11";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button15
             // 
             this.button15.BackColor = System.Drawing.Color.Silver;
-            this.button15.Location = new System.Drawing.Point(261, 375);
+            this.button15.Location = new System.Drawing.Point(221, 376);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(73, 59);
             this.button15.TabIndex = 10;
             this.button15.Text = "15";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button13
             // 
@@ -153,26 +159,29 @@
             this.button13.TabIndex = 12;
             this.button13.Text = "13";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.Silver;
-            this.button9.Location = new System.Drawing.Point(261, 221);
+            this.button9.Location = new System.Drawing.Point(221, 222);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(73, 59);
             this.button9.TabIndex = 6;
             this.button9.Text = "9";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Silver;
-            this.button5.Location = new System.Drawing.Point(171, 142);
+            this.button5.Location = new System.Drawing.Point(131, 143);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(73, 59);
             this.button5.TabIndex = 4;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button7
             // 
@@ -183,6 +192,7 @@
             this.button7.TabIndex = 8;
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button4
             // 
@@ -193,46 +203,51 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.Silver;
-            this.button6.Location = new System.Drawing.Point(261, 142);
+            this.button6.Location = new System.Drawing.Point(221, 143);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(73, 59);
             this.button6.TabIndex = 9;
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button12
             // 
             this.button12.BackColor = System.Drawing.Color.Silver;
-            this.button12.Location = new System.Drawing.Point(261, 298);
+            this.button12.Location = new System.Drawing.Point(221, 299);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(73, 59);
             this.button12.TabIndex = 13;
             this.button12.Text = "12";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button14
             // 
             this.button14.BackColor = System.Drawing.Color.Silver;
-            this.button14.Location = new System.Drawing.Point(171, 375);
+            this.button14.Location = new System.Drawing.Point(131, 376);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(73, 59);
             this.button14.TabIndex = 11;
             this.button14.Text = "14";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.Silver;
-            this.button8.Location = new System.Drawing.Point(171, 221);
+            this.button8.Location = new System.Drawing.Point(131, 222);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(73, 59);
             this.button8.TabIndex = 7;
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button10
             // 
@@ -243,26 +258,29 @@
             this.button10.TabIndex = 5;
             this.button10.Text = "10";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Silver;
-            this.button3.Location = new System.Drawing.Point(261, 68);
+            this.button3.Location = new System.Drawing.Point(221, 69);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(73, 59);
             this.button3.TabIndex = 2;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.Location = new System.Drawing.Point(171, 68);
+            this.button2.Location = new System.Drawing.Point(131, 69);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(73, 59);
             this.button2.TabIndex = 1;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -273,6 +291,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox2
             // 
@@ -289,15 +308,15 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(408, 12);
+            this.groupBox2.Location = new System.Drawing.Point(359, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(387, 479);
+            this.groupBox2.Size = new System.Drawing.Size(366, 479);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
             // btnkaydet
             // 
-            this.btnkaydet.Location = new System.Drawing.Point(156, 416);
+            this.btnkaydet.Location = new System.Drawing.Point(144, 410);
             this.btnkaydet.Name = "btnkaydet";
             this.btnkaydet.Size = new System.Drawing.Size(209, 48);
             this.btnkaydet.TabIndex = 14;
@@ -307,7 +326,7 @@
             // 
             // msktc
             // 
-            this.msktc.Location = new System.Drawing.Point(156, 170);
+            this.msktc.Location = new System.Drawing.Point(144, 170);
             this.msktc.Mask = "00000000000";
             this.msktc.Name = "msktc";
             this.msktc.Size = new System.Drawing.Size(209, 31);
@@ -316,7 +335,7 @@
             // 
             // msktel
             // 
-            this.msktel.Location = new System.Drawing.Point(156, 305);
+            this.msktel.Location = new System.Drawing.Point(144, 298);
             this.msktel.Mask = "(999) 000-0000";
             this.msktel.Name = "msktel";
             this.msktel.Size = new System.Drawing.Size(209, 31);
@@ -328,28 +347,28 @@
             this.combocins.Items.AddRange(new object[] {
             "Erkek",
             "Kadin"});
-            this.combocins.Location = new System.Drawing.Point(156, 356);
+            this.combocins.Location = new System.Drawing.Point(144, 356);
             this.combocins.Name = "combocins";
             this.combocins.Size = new System.Drawing.Size(209, 32);
             this.combocins.TabIndex = 11;
             // 
             // txtmail
             // 
-            this.txtmail.Location = new System.Drawing.Point(156, 239);
+            this.txtmail.Location = new System.Drawing.Point(144, 239);
             this.txtmail.Name = "txtmail";
             this.txtmail.Size = new System.Drawing.Size(209, 31);
             this.txtmail.TabIndex = 9;
             // 
             // txtsoyad
             // 
-            this.txtsoyad.Location = new System.Drawing.Point(156, 108);
+            this.txtsoyad.Location = new System.Drawing.Point(144, 108);
             this.txtsoyad.Name = "txtsoyad";
             this.txtsoyad.Size = new System.Drawing.Size(209, 31);
             this.txtsoyad.TabIndex = 7;
             // 
             // txtad
             // 
-            this.txtad.Location = new System.Drawing.Point(156, 45);
+            this.txtad.Location = new System.Drawing.Point(144, 49);
             this.txtad.Name = "txtad";
             this.txtad.Size = new System.Drawing.Size(209, 31);
             this.txtad.TabIndex = 6;
@@ -357,7 +376,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 364);
+            this.label6.Location = new System.Drawing.Point(3, 366);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 24);
             this.label6.TabIndex = 5;
@@ -402,7 +421,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 52);
+            this.label1.Location = new System.Drawing.Point(33, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 24);
             this.label1.TabIndex = 0;
@@ -425,11 +444,12 @@
             this.groupBox3.Controls.Add(this.txtsfrno);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Location = new System.Drawing.Point(801, 12);
+            this.groupBox3.Location = new System.Drawing.Point(737, 12);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(387, 479);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // btnsefer
             // 
@@ -439,6 +459,7 @@
             this.btnsefer.TabIndex = 24;
             this.btnsefer.Text = "Sefer Olustur";
             this.btnsefer.UseVisualStyleBackColor = true;
+            this.btnsefer.Click += new System.EventHandler(this.btnsefer_Click);
             // 
             // txtfyt
             // 
@@ -569,22 +590,23 @@
             this.groupBox4.Controls.Add(this.label15);
             this.groupBox4.Location = new System.Drawing.Point(43, 497);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(359, 225);
+            this.groupBox4.Size = new System.Drawing.Size(342, 225);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             // 
             // btnkaptan
             // 
-            this.btnkaptan.Location = new System.Drawing.Point(144, 171);
+            this.btnkaptan.Location = new System.Drawing.Point(118, 171);
             this.btnkaptan.Name = "btnkaptan";
             this.btnkaptan.Size = new System.Drawing.Size(209, 48);
             this.btnkaptan.TabIndex = 15;
             this.btnkaptan.Text = "Kaptan";
             this.btnkaptan.UseVisualStyleBackColor = true;
+            this.btnkaptan.Click += new System.EventHandler(this.btnkaptan_Click);
             // 
             // mskkptntel
             // 
-            this.mskkptntel.Location = new System.Drawing.Point(144, 116);
+            this.mskkptntel.Location = new System.Drawing.Point(118, 116);
             this.mskkptntel.Mask = "(999) 000-0000";
             this.mskkptntel.Name = "mskkptntel";
             this.mskkptntel.Size = new System.Drawing.Size(209, 31);
@@ -593,7 +615,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(52, 119);
+            this.label16.Location = new System.Drawing.Point(35, 116);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(77, 24);
             this.label16.TabIndex = 15;
@@ -602,14 +624,14 @@
             // 
             // txtkptnad
             // 
-            this.txtkptnad.Location = new System.Drawing.Point(144, 69);
+            this.txtkptnad.Location = new System.Drawing.Point(118, 71);
             this.txtkptnad.Name = "txtkptnad";
             this.txtkptnad.Size = new System.Drawing.Size(209, 31);
             this.txtkptnad.TabIndex = 11;
             // 
             // txtkptnno
             // 
-            this.txtkptnno.Location = new System.Drawing.Point(144, 21);
+            this.txtkptnno.Location = new System.Drawing.Point(118, 25);
             this.txtkptnno.Name = "txtkptnno";
             this.txtkptnno.Size = new System.Drawing.Size(209, 31);
             this.txtkptnno.TabIndex = 10;
@@ -617,7 +639,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(32, 76);
+            this.label14.Location = new System.Drawing.Point(15, 71);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(97, 24);
             this.label14.TabIndex = 9;
@@ -626,7 +648,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(23, 28);
+            this.label15.Location = new System.Drawing.Point(6, 28);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(106, 24);
             this.label15.TabIndex = 8;
@@ -634,30 +656,31 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.textBox1);
+            this.groupBox5.Controls.Add(this.txtkoltukno);
             this.groupBox5.Controls.Add(this.label20);
             this.groupBox5.Controls.Add(this.mskrezervetc);
             this.groupBox5.Controls.Add(this.label18);
             this.groupBox5.Controls.Add(this.btnrezervasyon);
             this.groupBox5.Controls.Add(this.txtseferno);
             this.groupBox5.Controls.Add(this.label19);
-            this.groupBox5.Location = new System.Drawing.Point(408, 497);
+            this.groupBox5.Location = new System.Drawing.Point(391, 497);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(387, 242);
+            this.groupBox5.Size = new System.Drawing.Size(340, 252);
             this.groupBox5.TabIndex = 17;
             this.groupBox5.TabStop = false;
             // 
-            // textBox1
+            // txtkoltukno
             // 
-            this.textBox1.Location = new System.Drawing.Point(144, 116);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(209, 31);
-            this.textBox1.TabIndex = 18;
+            this.txtkoltukno.Enabled = false;
+            this.txtkoltukno.Location = new System.Drawing.Point(119, 112);
+            this.txtkoltukno.Name = "txtkoltukno";
+            this.txtkoltukno.Size = new System.Drawing.Size(209, 31);
+            this.txtkoltukno.TabIndex = 18;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(11, 123);
+            this.label20.Location = new System.Drawing.Point(3, 119);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(100, 24);
             this.label20.TabIndex = 17;
@@ -665,7 +688,7 @@
             // 
             // mskrezervetc
             // 
-            this.mskrezervetc.Location = new System.Drawing.Point(144, 64);
+            this.mskrezervetc.Location = new System.Drawing.Point(119, 61);
             this.mskrezervetc.Mask = "00000000000";
             this.mskrezervetc.Name = "mskrezervetc";
             this.mskrezervetc.Size = new System.Drawing.Size(209, 31);
@@ -675,7 +698,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(75, 71);
+            this.label18.Location = new System.Drawing.Point(63, 68);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(36, 24);
             this.label18.TabIndex = 15;
@@ -683,16 +706,18 @@
             // 
             // btnrezervasyon
             // 
-            this.btnrezervasyon.Location = new System.Drawing.Point(144, 171);
+            this.btnrezervasyon.Location = new System.Drawing.Point(119, 161);
             this.btnrezervasyon.Name = "btnrezervasyon";
             this.btnrezervasyon.Size = new System.Drawing.Size(209, 48);
             this.btnrezervasyon.TabIndex = 15;
             this.btnrezervasyon.Text = "Rezervasyon";
             this.btnrezervasyon.UseVisualStyleBackColor = true;
+            this.btnrezervasyon.Click += new System.EventHandler(this.btnrezervasyon_Click);
             // 
             // txtseferno
             // 
-            this.txtseferno.Location = new System.Drawing.Point(144, 21);
+            this.txtseferno.Enabled = false;
+            this.txtseferno.Location = new System.Drawing.Point(119, 18);
             this.txtseferno.Name = "txtseferno";
             this.txtseferno.Size = new System.Drawing.Size(209, 31);
             this.txtseferno.TabIndex = 10;
@@ -700,7 +725,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(23, 28);
+            this.label19.Location = new System.Drawing.Point(11, 27);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(88, 24);
             this.label19.TabIndex = 8;
@@ -709,27 +734,51 @@
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.button16);
-            this.groupBox6.Location = new System.Drawing.Point(813, 497);
+            this.groupBox6.Location = new System.Drawing.Point(737, 497);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(375, 231);
+            this.groupBox6.Size = new System.Drawing.Size(387, 249);
             this.groupBox6.TabIndex = 18;
             this.groupBox6.TabStop = false;
+            this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(94, 177);
+            this.button16.Location = new System.Drawing.Point(84, 30);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(209, 48);
             this.button16.TabIndex = 15;
-            this.button16.Text = "Kaydet";
+            this.button16.Text = "Sefer Olustur ";
             this.button16.UseVisualStyleBackColor = true;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.dataGridView1);
+            this.groupBox7.Location = new System.Drawing.Point(1130, 22);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(460, 727);
+            this.groupBox7.TabIndex = 19;
+            this.groupBox7.TabStop = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 27);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(454, 697);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1312, 751);
+            this.ClientSize = new System.Drawing.Size(1602, 751);
+            this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -740,6 +789,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -750,6 +800,8 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -816,10 +868,12 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.MaskedTextBox mskrezervetc;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtkoltukno;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
